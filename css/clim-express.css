@@ -60,8 +60,14 @@ p {
 
 .section-heading .section-heading-lower {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 100;
+}
+
+@media screen and (min-width: 1199px) {
+  .section-heading .section-heading-lower {
+    font-size: 3rem;
+  }
 }
 
 .bg-faded {
@@ -111,9 +117,17 @@ input[type=submit]:hover {
   color: #00587a;
 }
 
+#mainNav .navbar-nav .nav-item {
+  padding-bottom: 15px;
+}
+
 #mainNav .navbar-nav .nav-item .nav-link {
   color: rgba(255, 255, 255, 0.7);
   font-weight: 800;
+}
+
+#mainNav .navbar-nav .nav-item.active {
+  max-width: 50%;
 }
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
@@ -122,11 +136,17 @@ input[type=submit]:hover {
 }
 
 @media (min-width: 992px) {
+  #mainNav .navbar-nav .nav-item {
+    padding-bottom: 0;
+  }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 0.9rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
     color: rgba(255, 255, 255, 0.4);
+  }
+  #mainNav .navbar-nav .nav-item.active {
+    max-width: 100%;
   }
   #mainNav .navbar-nav .nav-item.active .nav-link:hover {
     color: #00587a;
