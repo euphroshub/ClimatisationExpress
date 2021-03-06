@@ -278,6 +278,10 @@ input[type=submit]:hover {
   background-color: rgba(15, 48, 87, 0.9);
 }
 
+.footer-logo {
+  margin-top: 15px;
+}
+
 .text-primary {
   color: #00587a !important;
 }
